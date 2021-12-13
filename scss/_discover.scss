@@ -1,0 +1,182 @@
+.discover {
+    padding: 5rem 0 4.375rem;
+    background-color: #fbfbed;
+    @include media-breakpoint-down(lg) {
+        padding: 3.5rem 0 3.775rem;
+    }
+    @media (max-width: 395px) {
+        padding: 2rem 0 3rem;
+    }
+    .discover__heading {
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+        .accent__word,
+        .word__area {
+            font-size: 2.5rem;
+            color: #3dbe98;
+            text-transform: uppercase;
+            @include media-breakpoint-down(lg) {
+                font-size: 2.188rem;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 1.988rem;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1.877rem;
+            }
+        }
+        p .description {
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+    .discover__main {
+        justify-content: space-between;
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+        .first {
+            margin-top: 3rem;
+            @include media-breakpoint-down(sm) {
+                margin-top: 1rem;
+            }
+        }
+        .discover__card {
+            position: relative;
+            padding: 0;
+            width: 300px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+            @include media-breakpoint-down(md) {
+                width: 400px;
+            }
+            @media(max-width:405px) {
+                width: 450px;
+            }
+            .discover__img {
+                width: 100%;
+                min-height: 180px;
+            }
+            .discover__island-name {
+                text-transform: uppercase;
+                color: #3dbe98;
+                font-size: 1.5rem;
+                @include media-breakpoint-down(lg) {
+                    font-size: 1.4rem;
+                }
+            }
+            .price__btn {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.596);
+                background-color: #3dbe98;
+                padding: 1.3rem 0;
+                padding-left: 1.3rem;
+                position: absolute;
+                bottom: 0;
+                .price__number {
+                    color: #fff;
+                    font-size: 1.3rem;
+                    position: relative;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 1.177rem;
+                    }
+                }
+                div {
+                    display: inline-block;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    .discover__footer {
+        text-align: center;
+        .discover__footer-text {
+            color: #656562;
+        }
+        .form__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-select {
+            font-family: 'Gotham';
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+            max-width: 670px;
+            outline: none;
+            border: none;
+            border-radius: 0;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        .exploreBtn {
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            padding: 11px 60px;
+            background-color: #3dbe98;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+            outline: none;
+            border: none;
+            border-radius: 0;
+            color: #fff;
+            @include media-breakpoint-down(lg) {
+                font-size: 1.1rem;
+                padding: 11px 55px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 1rem;
+                padding: 9px 45px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+                padding: 8px 35px;
+            }
+            @media (max-width:480px) {
+                font-size: .9rem;
+                padding: 7px 25px;
+            }
+            @media (max-width:350px) {
+                font-size: .8rem;
+                padding: 7px 20px;
+            }
+        }
+    }
+}
+
+span.arrow {
+    position: relative;
+    display: inline-block;
+    margin-left: 40%;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 15px;
+    height: 15px;
+    transform: rotate( 45deg);
+    padding-right: 10px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        top: -1px;
+        right: 0;
+        background-color: #fff;
+        transform-origin: top right;
+        transform: rotate(315deg);
+    }
+}
+
+.exploreBtn,
+.form-select {
+    min-height: 3.75rem;
+}

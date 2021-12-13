@@ -1,0 +1,53 @@
+.why {
+    padding: 5rem 0;
+    text-align: center;
+    @include media-breakpoint-down(lg) {
+        padding: 3.5rem 0;
+    }
+    .why__heading {
+        .why__word,
+        .area__word {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: #ff5d35;
+            @include media-breakpoint-down(lg) {
+                font-size: 2.188rem;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 1.988rem;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1.877rem;
+            }
+        }
+    }
+    .why__info-wrapper {
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        .info__item {
+            margin-top: 3.75rem;
+            margin-right: 2rem;
+            min-width: 350px;
+            font-size: 1.125rem;
+            @include media-breakpoint-down(lg) {
+                margin-top: 2.5rem;
+                font-size: 1.1rem;
+                min-width: 400px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 1rem;
+                padding: 0 15px;
+                margin-right: 0;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: .9rem;
+                min-width: 0;
+                width: 100%;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

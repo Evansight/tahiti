@@ -1,0 +1,108 @@
+.footer {
+    padding: 3.125rem 0;
+    @include media-breakpoint-down(lg) {
+        padding: 2.125rem 0 3.125rem;
+    }
+    .footer__wrapper {
+        @include media-breakpoint-down(md) {
+            justify-content: space-around;
+        }
+        @include media-breakpoint-down(sm) {
+            justify-content: center;
+        }
+        .footer__social {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 1rem;
+            max-width: 295px;
+            @include media-breakpoint-down(md) {
+                max-width: 210px;
+            }
+            .footer__socoal-icon {
+                display: block;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 46px;
+                height: 46px;
+                @include media-breakpoint-down(xl) {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+        .footer__nav {
+            max-width: 200px;
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 1rem;
+            }
+        }
+        .footer__title {
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #f25980;
+            margin-top: .7rem;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 0;
+            }
+        }
+        .footer__nemu-item {
+            .footer__nemu-link {
+                text-decoration: none;
+                color: #f25980;
+            }
+        }
+        .footer__menu {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .logo__wrapper {
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    .footer__wrapper {
+        justify-content: space-around;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .pb-4 {
+        padding-bottom: 1rem !important;
+    }
+}
+
+@media (max-width: 409px) {
+    .footer .footer__wrapper {
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width:399px) {
+    .footer .footer__wrapper {
+        justify-content: center;
+    }
+}
+
+.facebook {
+    background-image: url(../img/icons/media/facebook.svg);
+}
+
+.instagram {
+    background-image: url(../img/icons/media/instagram.svg);
+}
+
+.pinterest {
+    background-image: url(../img/icons/media/pinterest.svg);
+}
+
+.twitter {
+    background-image: url(../img/icons/media/twitter.svg);
+}
+
+.youtube {
+    background-image: url(../img/icons/media/youtube.svg);
+}

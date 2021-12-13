@@ -1,0 +1,82 @@
+.experience {
+    background-image: url(../img/experience/ex-bg.jpg), linear-gradient( 358deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 0;
+    .experiance__wrapper {
+        .experiance__heading {
+            padding-bottom: 250px;
+            white-space: nowrap;
+            .experiance__word,
+            .area__word {
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                color: #ee2255;
+                @include media-breakpoint-down(lg) {
+                    font-size: 2.188rem;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 1.988rem;
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: 1.777rem;
+                }
+            }
+            .description {
+                color: #fff;
+            }
+        }
+        .experiance__main-info {
+            text-align: center;
+            .italic__text-decription {
+                max-width: 975px;
+                display: inline-block;
+                color: #fff;
+                font-style: italic;
+                font-size: 1.25rem;
+                padding-bottom: 2.5rem;
+                @include media-breakpoint-down(lg) {
+                    font-size: 1.1rem;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 1rem;
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: .9rem;
+                }
+            }
+            .btn__wrapper {
+                .link__btn {
+                    display: inline-block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 22px 74px;
+                    font-size: 1.25rem;
+                    color: #fff;
+                    background-color: #ee2255;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 1.1em;
+                        padding: 19px 65px;
+                    }
+                    @include media-breakpoint-down(md) {
+                        font-size: 1rem;
+                        padding: 15px 45px;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        font-size: 1rem;
+                        padding: 12px 35px;
+                    }
+                    @media (max-width:480px) {
+                        font-size: .9rem;
+                        padding: 9px 25px;
+                    }
+                    @media (max-width:350px) {
+                        font-size: .8rem;
+                        padding: 7px 20px;
+                    }
+                }
+            }
+        }
+    }
+}

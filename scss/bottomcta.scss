@@ -1,0 +1,76 @@
+.bottomcta {
+    background-image: url(../img/bottomcta/bt-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 8.438rem 0;
+    @include media-breakpoint-down(lg) {
+        padding: 7.438rem 0;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 5.438rem 0;
+    }
+    .bottomcta__wrapper {
+        padding: 4.25rem 6.375rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        @include media-breakpoint-down(xl) {
+            padding: 4.05rem 6.075rem;
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 3.95rem 3.875rem;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 3.95rem 1.975rem;
+        }
+        .bottomcta__title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            @include media-breakpoint-down(lg) {
+                font-size: 2.188rem;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 1.988rem;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1.877rem;
+            }
+        }
+        .description {
+            display: inline-block;
+            max-width: 970px;
+            color: #fff;
+            padding-bottom: 4rem;
+            font-size: 1.25rem;
+            @include media-breakpoint-down(lg) {
+                font-size: 1.1rem;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 1rem;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: .9rem;
+            }
+        }
+        .link__btn {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            background-color: #21b6c7;
+            padding: 1.375rem 5rem;
+            @include media-breakpoint-down(lg) {
+                font-size: 1.1em;
+                padding: 19px 65px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 1rem;
+                padding: 15px 45px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+                padding: 12px 35px;
+            }
+        }
+    }
+}
