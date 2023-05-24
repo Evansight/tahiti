@@ -13,132 +13,141 @@
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="logo__wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="44" viewBox="0 0 45 44">
-                        <image id="logo" width="45" height="44" xlink:href="data:img/png;base64,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"/>
-                      </svg>
-                    <span class="logo__name">TAHITI</span>
-                </div>
-                <div class="header__burger">
-                    <span></span>
-                </div>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a href="#discover" class="menu__list-link">Discover</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a href="#experience" class="menu__list-link">Experience</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a href="#why" class="menu__list-link">Travel guides</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a href="#footer" class="menu__list-link">About</a>
-                        </li>
-                    </ul>
-                </nav>
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="logo__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45"
+                     height="44" viewBox="0 0 45 44">
+                    <image id="logo" width="45" height="44"
+                           xlink:href="data:img/png;base64,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"/>
+                </svg>
+                <span class="logo__name">TAHITI</span>
             </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#discover" class="menu__list-link">Discover</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#experience" class="menu__list-link">Experience</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#why" class="menu__list-link">Travel guides</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#footer" class="menu__list-link">About</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
-    <div class="slider__wrapper">
-        <section class="slider">
-            <div class="slider__item">
-                <img src="img/slider/Layer 1.jpg" alt="" class="slider__img">
-            </div>
-            <div class="slider__item">
-                <img src="img/slider/Layer 2.jpg" alt="" class="slider__img">
-            </div>
-            <div class="slider__item">
-                <img src="img/slider/Layer 3.jpg" alt="" class="slider__img">
-            </div>
-            <div class="slider__item">
-                <img src="img/slider/Layer 4.jpg" alt="" class="slider__img">
-            </div>
-        </section>
-        <div class="slider__content">
-            <div class="slider__content-wrapper">
-                <div class="slider__content-item">
-                    <p class="welcome__wrapper"><strong class="slider__text-welcome">Welcome</strong><span class="slider__word-area"> to tahiti</span></p>
-                    <p class="slider__description">Your vacation starts here</p>
-                </div>
+<div class="slider__wrapper">
+    <section class="slider">
+        <div class="slider__item">
+            <img src="img/slider/Layer 1.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+            <img src="img/slider/Layer 2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+            <img src="img/slider/Layer 3.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+            <img src="img/slider/Layer 4.jpg" alt="" class="slider__img">
+        </div>
+    </section>
+    <div class="slider__content">
+        <div class="slider__content-wrapper">
+            <div class="slider__content-item">
+                <p class="welcome__wrapper"><strong class="slider__text-welcome">Welcome</strong><span
+                        class="slider__word-area"> to tahiti</span></p>
+                <p class="slider__description">Your vacation starts here</p>
             </div>
         </div>
     </div>
+</div>
 
-    <section class="discover" id="discover">
-        <div class="container">
-            <div class="discover__heading">
-                <strong class="accent__word">discover</strong> <span class="word__area">tahiti</span>
-                <p class="description">Just pick your destination. Our travel experts will take care of the rest.</p>
-            </div>
-            <div class="discover__main row">
-                <div class="discover__card col-3 first">
-                    <img class="discover__img" src="img/islands/bora.jpg" alt="bora bora">
-                    <div class="discover__card-description p-3">
-                        <h3 class="discover__island-name">Bora Bora</h3>
-                        <p class="discription pb-3 mb-5">
-                            Surrounded by sand-fringed motus and a turquoise lagoon protected by a coral reef, Bora Bora is known...
-                        </p>
-                    </div>
-                    <a href="#" class="price__btn"><span>
+<section class="discover" id="discover">
+    <div class="container">
+        <div class="discover__heading">
+            <strong class="accent__word">discover</strong> <span class="word__area">tahiti</span>
+            <p class="description">Just pick your destination. Our travel experts will take care of the rest.</p>
+        </div>
+        <div class="discover__main row">
+            <div class="discover__card col-3 first">
+                <img class="discover__img" src="img/islands/bora.jpg" alt="bora bora">
+                <div class="discover__card-description p-3">
+                    <h3 class="discover__island-name">Bora Bora</h3>
+                    <p class="discription pb-3 mb-5">
+                        Surrounded by sand-fringed motus and a turquoise lagoon protected by a coral reef, Bora Bora is
+                        known...
+                    </p>
+                </div>
+                <a href="#" class="price__btn"><span>
                         from <span class="price__number">$2,500</span>
                     </span>
-                    <div><span class="arrow"></span></div></a>
+                    <div><span class="arrow"></span></div>
+                </a>
+            </div>
+            <div class="discover__card col-3 mt-5">
+                <img class="discover__img" src="img/islands/moorea.jpg" alt="moorea">
+                <div class="discover__card-description p-3">
+                    <h3 class="discover__island-name">Moorea</h3>
+                    <p class="discription pb-3 mb-5">
+                        Mo'orea is a South Pacific island, part of French Polynesia's Society Islands archipelago. It's
+                        known for...
+                    </p>
                 </div>
-                <div class="discover__card col-3 mt-5">
-                    <img class="discover__img" src="img/islands/moorea.jpg" alt="moorea">
-                    <div class="discover__card-description p-3">
-                        <h3 class="discover__island-name">Moorea</h3>
-                        <p class="discription pb-3 mb-5">
-                            Mo'orea is a South Pacific island, part of French Polynesia's Society Islands archipelago. It's known for...
-                        </p>
-                    </div>
-                    <a href="#" class="price__btn"><span>
+                <a href="#" class="price__btn"><span>
                         from <span class="price__number">$2,500</span>
                      </span>
-                        <div><span class="arrow"></span></div>
-                    </a>
-                </div>
-                <div class="discover__card col-3 mt-5">
-                    <img class="discover__img" src="img/islands/3.jpg" alt="Ra'iātea">
-                    <div class="discover__card-description p-3">
-                        <h3 class="discover__island-name">Ra'iātea</h3>
-                        <p class="discription pb-3 mb-5">
-                            Ra'iātea, is the second largest of the Society Islands in French Polynesia. The island is widely regarded as...
-                        </p>
-                    </div>
-                    <a href="#" class="price__btn">
-                        <span>
-                            from <span class="price__number">$2,500</span>
-                        </span>
-                        <div><span class="arrow"></span></div>
-                    </a>
-                </div>
-                <div class="discover__card col-3 mt-5">
-                    <img class="discover__img" src="img/islands/tahaa.jpg" alt="taha'a">
-                    <div class="discover__card-description p-3">
-                        <h3 class="discover__island-name">Taha’a</h3>
-                        <p class="discription pb-3 mb-5">
-                            Taha’a is an island located among the western group, the Leeward Islands, of the Society Islands in...
-                        </p>
-                    </div>
-                    <a href="#" class="price__btn">
-                        <span>
-                            from <span class="price__number">$2,500</span>
-                        </span>
-                        <div><span class="arrow"></span></div>
-                    </a>
-                </div>
+                    <div><span class="arrow"></span></div>
+                </a>
             </div>
-            <div class="discover__footer mt-5">
-                <p class="discover__footer-text">Discover all Tahiti has to offer.</p>
-                <form action="">
-                    <div class="form__wrapper">
+            <div class="discover__card col-3 mt-5">
+                <img class="discover__img" src="img/islands/3.jpg" alt="Ra'iātea">
+                <div class="discover__card-description p-3">
+                    <h3 class="discover__island-name">Ra'iātea</h3>
+                    <p class="discription pb-3 mb-5">
+                        Ra'iātea, is the second largest of the Society Islands in French Polynesia. The island is widely
+                        regarded as...
+                    </p>
+                </div>
+                <a href="#" class="price__btn">
+                        <span>
+                            from <span class="price__number">$2,500</span>
+                        </span>
+                    <div><span class="arrow"></span></div>
+                </a>
+            </div>
+            <div class="discover__card col-3 mt-5">
+                <img class="discover__img" src="img/islands/tahaa.jpg" alt="taha'a">
+                <div class="discover__card-description p-3">
+                    <h3 class="discover__island-name">Taha’a</h3>
+                    <p class="discription pb-3 mb-5">
+                        Taha’a is an island located among the western group, the Leeward Islands, of the Society Islands
+                        in...
+                    </p>
+                </div>
+                <a href="#" class="price__btn">
+                        <span>
+                            from <span class="price__number">$2,500</span>
+                        </span>
+                    <div><span class="arrow"></span></div>
+                </a>
+            </div>
+        </div>
+        <div class="discover__footer mt-5">
+            <p class="discover__footer-text">Discover all Tahiti has to offer.</p>
+            <form action="">
+                <div class="form__wrapper">
+                    <div>
                         <select class="form-select" aria-label=" " placeholder="Select an island">
                             <option selected>Select an island</option>
                             <option value="1">Bora Bora</option>
@@ -146,139 +155,148 @@
                             <option value="3">Ra'iātea</option>
                             <option value="4">Taha’a</option>
                         </select>
-                        <input class="exploreBtn" type="submit" name="submit" value="Explore">
                     </div>
-                </form>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="experiance__wrapper">
-                <div class="experiance__heading">
-                    <strong class="experiance__word">Experiance</strong> <span class="area__word">Tahiti</span>
-                    <p class="description">Immerse yourself in Tahiti’s unique culture</p>
+                    <input class="exploreBtn" type="submit" name="submit" value="Explore">
                 </div>
-                <div class="experiance__main-info">
-                    <p class="italic__text-decription">
-                        The beauty, drama, and power of today’s Tahitian dance testify to its resilience in Polynesian culture. In ancient times, dances were directly linked with all aspects of life. One would dance for joy, to welcome a visitor, to pray to a god, to challenge
-                        an enemy, and to seduce a mate.
-                    </p>
-                    <div class="btn__wrapper">
-                        <a href="#" class="link__btn">Learn More</a>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
-    </section>
 
-    <section class="why" id="why">
-        <div class="container">
+    </div>
+</section>
 
-            <div class="why__heading">
-                <strong class="why__word">Why</strong> <span class="area__word">Tahiti?</span>
+<section class="experience" id="experience">
+    <div class="container">
+        <div class="experiance__wrapper">
+            <div class="experiance__heading">
+                <strong class="experiance__word">Experiance</strong> <span class="area__word">Tahiti</span>
+                <p class="description">Immerse yourself in Tahiti’s unique culture</p>
             </div>
-            <div class="why__info-wrapper row">
-                <p class="info__item col-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie sollicitudin nibh, nec iaculis est luctus sit amet.
-                </p>
-                <p class="info__item col-2">
-                    Phasellus vehicula nibh vel arcu tempor, sed porttitor metus viverra. Praesent pharetra scelerisque eros, sed sollicitudin arcu pretium.
-                </p>
-                <p class="info__item col-2">
-                    Maecenas ac facilisis dolor. Curabitur vel nulla eget nunc finibus pulvinar. Ut nec ornare nisi. Duis scelerisque volutpat risus vel condimentum.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="bottomcta" id="bottomcta">
-        <div class="container">
-            <div class="bottomcta__wrapper">
-                <h3 class="bottomcta__title pb-4">Unique vacations, tailored to your desires</h3>
-                <p class="description">
-                    Our travel experts will take care of everything. Whether choosing from our packaged vacations or customizing your own, extraordinary service and exceptional value are just a call or click away.
+            <div class="experiance__main-info">
+                <p class="italic__text-decription">
+                    The beauty, drama, and power of today’s Tahitian dance testify to its resilience in Polynesian
+                    culture. In ancient times, dances were directly linked with all aspects of life. One would dance for
+                    joy, to welcome a visitor, to pray to a god, to challenge
+                    an enemy, and to seduce a mate.
                 </p>
                 <div class="btn__wrapper">
-                    <a href="#" class="link__btn">Book Now</a>
+                    <a href="#" class="link__btn">Learn More</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footer__wrapper row">
-                <div class="logo__wrapper col-lg-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="44" viewBox="0 0 45 44">
-                        <image id="logo" width="45" height="44" xlink:href="data:img/png;base64,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"/>
-                      </svg>
-                    <span class="logo__name">TAHITI</span>
-                </div>
-                <div class="footer__nav col-lg-2">
-                    <h3 class="footer__title pb-4">Islands</h3>
-                    <ul class="footer__menu">
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Tahiti </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Bora Bora </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Moorea </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Huahine </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Raiatea </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Taha'a </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Rangiroa </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Tikehau </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Fakarava </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Tetiaroa </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Manihi </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Marquesas </a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Australs </a></li>
-                    </ul>
-                </div>
+<section class="why" id="why">
+    <div class="container">
 
-                <div class="footer__nav col-lg-2">
-                    <h3 class="footer__title pb-4">Packages</h3>
-                    <ul class="footer__menu">
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Honeymoons</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Cruises</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Value Vacations</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Weddings</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Active Adventures</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Luxury Escapes</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Festivals and Events</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Family Friendly</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Tailor a Package</a></li>
-                    </ul>
-                </div>
+        <div class="why__heading">
+            <strong class="why__word">Why</strong> <span class="area__word">Tahiti?</span>
+        </div>
+        <div class="why__info-wrapper row">
+            <p class="info__item col-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie sollicitudin nibh, nec iaculis
+                est luctus sit amet.
+            </p>
+            <p class="info__item col-2">
+                Phasellus vehicula nibh vel arcu tempor, sed porttitor metus viverra. Praesent pharetra scelerisque
+                eros, sed sollicitudin arcu pretium.
+            </p>
+            <p class="info__item col-2">
+                Maecenas ac facilisis dolor. Curabitur vel nulla eget nunc finibus pulvinar. Ut nec ornare nisi. Duis
+                scelerisque volutpat risus vel condimentum.
+            </p>
+        </div>
 
-                <div class="footer__nav col-lg-2">
-                    <h3 class="footer__title pb-4">Tahiti</h3>
-                    <ul class="footer__menu">
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">About Us</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Reviews</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Contact Us</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Careers</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Terms and Conditions</a></li>
-                        <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Privacy Policy</a></li>
-                    </ul>
-                </div>
+    </div>
+</section>
 
-                <div class="footer__social col-lg-3">
-                    <a href="#" class="footer__socoal-icon facebook"></a>
-                    <a href="#" class="footer__socoal-icon pinterest"></a>
-                    <a href="#" class="footer__socoal-icon twitter"></a>
-                    <a href="#" class="footer__socoal-icon instagram"></a>
-                    <a href="#" class="footer__socoal-icon youtube"></a>
-                </div>
+<section class="bottomcta" id="bottomcta">
+    <div class="container">
+        <div class="bottomcta__wrapper">
+            <h3 class="bottomcta__title pb-4">Unique vacations, tailored to your desires</h3>
+            <p class="description">
+                Our travel experts will take care of everything. Whether choosing from our packaged vacations or
+                customizing your own, extraordinary service and exceptional value are just a call or click away.
+            </p>
+            <div class="btn__wrapper">
+                <a href="#" class="link__btn">Book Now</a>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./bootstrap/js/bootstrap.js"></script>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__wrapper row">
+            <div class="logo__wrapper col-lg-3">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45"
+                     height="44" viewBox="0 0 45 44">
+                    <image id="logo" width="45" height="44"
+                           xlink:href="data:img/png;base64,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"/>
+                </svg>
+                <span class="logo__name">TAHITI</span>
+            </div>
+            <div class="footer__nav col-lg-2">
+                <h3 class="footer__title pb-4">Islands</h3>
+                <ul class="footer__menu">
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Tahiti </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Bora Bora </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Moorea </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Huahine </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Raiatea </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Taha'a </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Rangiroa </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Tikehau </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Fakarava </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Tetiaroa </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Manihi </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Marquesas </a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Australs </a></li>
+                </ul>
+            </div>
+
+            <div class="footer__nav col-lg-2">
+                <h3 class="footer__title pb-4">Packages</h3>
+                <ul class="footer__menu">
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Honeymoons</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Cruises</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Value Vacations</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Weddings</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Active Adventures</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Luxury Escapes</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Festivals and Events</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Family Friendly</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Tailor a Package</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__nav col-lg-2">
+                <h3 class="footer__title pb-4">Tahiti</h3>
+                <ul class="footer__menu">
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">About Us</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Reviews</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Contact Us</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Careers</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Terms and Conditions</a></li>
+                    <li class="footer__nemu-item"><a href="#" class="footer__nemu-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__social col-lg-3">
+                <a href="#" class="footer__socoal-icon facebook"></a>
+                <a href="#" class="footer__socoal-icon pinterest"></a>
+                <a href="#" class="footer__socoal-icon twitter"></a>
+                <a href="#" class="footer__socoal-icon instagram"></a>
+                <a href="#" class="footer__socoal-icon youtube"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>
