@@ -29,6 +29,10 @@
       }
     }
 
+    .accent__word{
+      margin-right: .5em;
+    }
+
     p .description {
       font-size: 14px;
       margin: 0;
@@ -146,20 +150,6 @@
         width: 100%;
         max-width: 670px;
 
-        //&:after {
-        //  content: '';
-        //  position: absolute;
-        //  right: 22px;
-        //  top: 50%;
-        //  transform: translateY(-50%) rotate(180deg);
-        //  width: 0;
-        //  height: 0;
-        //  border-left: 8px solid transparent;
-        //  border-right: 8px solid transparent;
-        //  border-bottom: 8px solid #707070;
-        //  cursor: pointer;
-        //}
-
         .form-select {
           font-family: 'Gotham';
           background-color: rgb(255, 255, 255);
@@ -174,11 +164,12 @@
           -webkit-appearance: none;
           -moz-appearance: none;
           font-size: 16px;
-          background: #fff url('../img/icons/Rectangle.png') no-repeat right center;
+          background-image: url('../img/icons/Rectangle.png');
+          background-repeat: no-repeat;
+          background-position: right 20px center;
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
-          margin-right: 20px;
         }
       }
     }

@@ -3,25 +3,6 @@ $(document).ready(function() {
         arrows: false,
         autoplay: true,
         pauseOnFocus: false,
-        // responsive: [{
-        //         breakpoint: 768,
-        //         settings: {
-        //             arrows: false,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 1
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             arrows: false,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 1
-        //         }
-        //     }
-        // ]
     });
 });
 
@@ -31,3 +12,15 @@ document.querySelector('.header__burger').addEventListener('click', function() {
     document.querySelector('.menu__list').classList.toggle('animate');
     document.querySelector('body').classList.toggle('vertical__hiden');
 })
+
+
+
+
+const elements = document.querySelectorAll('*');
+
+for (let i = 0; i < elements.length; i++) {
+    const styles = window.getComputedStyle(elements[i]);
+    if (styles.marginRight === '.5em') {
+        elements[i].style = '';
+    }
+}

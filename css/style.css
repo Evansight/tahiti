@@ -1676,6 +1676,9 @@ li {
     font-size: 1.877rem;
   }
 }
+.discover .discover__heading .accent__word {
+  margin-right: 0.5em;
+}
 .discover .discover__heading p .description {
   font-size: 14px;
   margin: 0;
@@ -1802,11 +1805,12 @@ li {
   -webkit-appearance: none;
   -moz-appearance: none;
   font-size: 16px;
-  background: #fff url("../img/icons/Rectangle.png") no-repeat right center;
+  background-image: url("../img/icons/Rectangle.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin-right: 20px;
 }
 .discover .discover__footer .exploreBtn {
   text-transform: uppercase;
@@ -1913,6 +1917,9 @@ span.arrow::after {
     font-size: 1.777rem;
   }
 }
+.experience .experiance__wrapper .experiance__heading .experiance__word {
+  margin-right: 0.5em;
+}
 .experience .experiance__wrapper .experiance__heading .description {
   color: #fff;
 }
@@ -2014,6 +2021,9 @@ span.arrow::after {
 .why .why__heading .area__word {
     font-size: 1.877rem;
   }
+}
+.why .why__heading .why__word {
+  margin-right: 0.5em;
 }
 .why .why__info-wrapper {
   justify-content: center;
